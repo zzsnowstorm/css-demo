@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>css3制作卡通人物-皮卡丘和哆啦A梦</title>
+		<link rel="stylesheet" href="css/default.css">
+		<style id="styleTag"></style>
+		<style id="styleTag2"></style>
+	</head>
+	<body>
+		<div class="code-wrapper">
+			<pre id="code"></pre>
+		</div>
+		<div class="preview-wrapper">
+			<div class="preview">
+				<div class="wraper">
+					<div class="lower_lip_wraper">
+						<div class="lower_lip"></div>
+					</div>
+					<div class="nose"></div>
+					<div class="eye left"></div>
+					<div class="eye right"></div>
+					<div class="face left"></div>
+					<div class="face right"></div>
+					<div class="upper_lip left"></div>
+					<div class="upper_lip right"></div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="doraemon">
+					<div class="head">
+						<div class="eyes">
+							<div class="eye-d left-d">
+								<div class="black bleft"></div>
+							</div>
+							<div class="eye-d right-d">
+								<div class="black bright"></div>
+							</div>
+						</div>
+						<div class="face-d">
+							<div class="white"></div>
+							<div class="nose-d">
+								<div class="light"></div>
+							</div>
+							<div class="nose_line"></div>
+							<div class="mouth"></div>
+							<div class="whiskers">
+								<div class="whisker rTop r160"></div>
+								<div class="whisker rMiddle"></div>
+								<div class="whisker rBottom r20"></div>
+								<div class="whisker lTop r20"></div>
+								<div class="whisker lMiddle"></div>
+								<div class="whisker lBottom r160"></div>
+							</div>
+						</div>
+					</div>
+					<div class="choker">
+						<div class="bell">
+							<div class="bell_line"></div>
+							<div class="bell_circle"></div>
+							<div class="bell_under"></div>
+							<div class="bell_light"></div>
+						</div>
+					</div>
+					<div class="bodys">
+						<div class="body"></div>
+						<div class="wraps"></div>
+						<div class="pocket"></div>
+						<div class="pocket_mask"></div>
+					</div>
+					<div class="hand_right">
+						<div class="arm"></div>
+						<div class="circle"></div>
+						<div class="arm_rewrite"></div>
+					</div>
+					<div class="hand_left">
+						<div class="arm"></div>
+						<div class="circle"></div>
+						<div class="arm_rewrite"></div>
+					</div>
+					<div class="foot">
+						<div class="left-d"></div>
+						<div class="right-d"></div>
+						<div class="foot_rewrite"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="actions">
+			<button data-speed="slow">慢 速</button>
+			<button data-speed="normal" class="active">中 速</button>
+			<button data-speed="fast">快 速</button>
+			<div>
+				<audio src="http://win.web.nf01.sycdn.kuwo.cn/dae7250648ce59b0880e078b909b449e/5d280bc4/resource/n2/48/66/683588331.mp3"
+				 controls="controls" preload id="music" hidden></audio>
+				<input type="button" onclick="a()" id="a" value="BGM播放/暂停" /></div>
+
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			function a() {
+				var audio = document.getElementById('music');
+				if (audio.paused) {
+					audio.play(); // 播放
+					$("#a").addClass("active")
+				} else {
+					audio.pause();
+					$("#a").removeClass("active") // 暂停
+				}
+			}
+		</script>
+
+	</body>
+</html>
